@@ -21,6 +21,9 @@ const router = createBrowserRouter([
                 path: "note/:noteId",
                 element: <NoteRoute />,
                 loader: async ({ params }) => {
+                    if (!params.noteId) {
+                        throw new Error('No note ID')
+                    }
                     const note = await pool.get(
                         [
                             "wss://nos.lol/",

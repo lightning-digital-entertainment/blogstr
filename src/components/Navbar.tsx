@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Navbar() {
   return (
     <header className="flex flex-row w-full bg-zinc-700">

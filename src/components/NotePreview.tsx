@@ -1,4 +1,3 @@
-import React from "react";
 import { Note } from "../models/Note";
 import { useNavigate } from "react-router-dom";
 
